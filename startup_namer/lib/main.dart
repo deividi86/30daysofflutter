@@ -25,12 +25,11 @@ class _RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Add from here...
       appBar: AppBar(
         title: Text('Startup Name Generator'),
       ),
       body: _buildSuggestions(),
-    ); // ... to here.
+    );
   }
 
   Widget _buildSuggestions() {
@@ -48,7 +47,6 @@ class _RandomWordsState extends State<RandomWords> {
           if (i.isOdd) {
             return Divider();
           }
-
           // The syntax "i ~/ 2" divides i by 2 and returns an
           // integer result.
           // For example: 1, 2, 3, 4, 5 becomes 0, 1, 1, 2, 2.
